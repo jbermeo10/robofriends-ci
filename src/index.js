@@ -8,7 +8,7 @@ import './index.css';
 import App from './containers/App';
 import { searchRobots, requestRobots } from './reducers'; //importing reducer
 import 'tachyons';
-// import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 // import reportWebVitals from './reportWebVitals';
 
 const logger = createLogger();
@@ -29,7 +29,7 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://cra.link/PWA
 
-// serviceWorkerRegistration.register();
+serviceWorkerRegistration.register();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
